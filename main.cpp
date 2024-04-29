@@ -44,12 +44,12 @@ int main() {
 
     int opcion;
     do {
-        cout << "\n*** Menú de la Tienda Temática ***\n";
+        cout << "\n*** Menu de la Tienda ***\n";
         cout << "1. Agregar productos al carrito.\n";
         cout << "2. Modificar nombres, precios o % descuento de productos.\n";
         cout << "3. Realizar compra.\n";
         cout << "4. Salir.\n";
-        cout << "Ingrese el número de la opción que desea realizar: ";
+        cout << "Ingrese el número de la opcion que desea realizar: ";
         cin >> opcion;
         cin.ignore(); // Limpiar el buffer del salto de línea
 
@@ -78,7 +78,7 @@ int main() {
             }
             case 2: {
                 if (!tienda.productos.empty()) {
-                    cout << "\n*** Modificación de Productos ***\n";
+                    cout << "\n*** Modificacion de Productos ***\n";
                     cout << "Seleccione el producto que desea modificar:\n";
                     for (size_t i = 0; i < tienda.productos.size(); ++i) {
                         cout << i+1 << ". " << tienda.productos[i]->nombre << "\n";
@@ -88,7 +88,7 @@ int main() {
                     cin >> seleccion;
                     cin.ignore(); // Limpiar el buffer del salto de línea
                     if (seleccion >= 1 && seleccion <= tienda.productos.size()) {
-                        cout << "\nSeleccione qué desea modificar:\n";
+                        cout << "\nSeleccione que desea modificar:\n";
                         cout << "1. Nombre\n";
                         cout << "2. Precio\n";
                         cout << "3. % Descuento\n";
@@ -118,11 +118,11 @@ int main() {
                                 cout << "% Descuento modificado exitosamente!\n";
                                 break;
                             default:
-                                cout << "¡Opción no válida!\n";
+                                cout << "¡Opción no valida!\n";
                                 break;
                         }
                     } else {
-                        cout << "¡Opción no válida!\n";
+                        cout << "¡Opción no valida!\n";
                     }
                 } else {
                     cout << "No hay productos disponibles para modificar.\n";
@@ -148,10 +148,10 @@ int main() {
                 }
                 break;
             case 4:
-            cout << "¡Gracias por visitar la Tienda Temática! ¡Hasta pronto!\n";
+            cout << "¡Gracias por visitar la Tienda ! ¡Hasta pronto!\n";
             break;
             default:
-            cout << "Opción no válida. Por favor, ingrese una opción válida.\n";
+            cout << "Opción no valida. Por favor, ingrese una opción valida.\n";
             break;
             }
             } while (opcion != 4);
