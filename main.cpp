@@ -14,17 +14,17 @@ int main() {
     string nombre, apellidos, direccion, telefono, numeroIdentificacion, clave;
     double saldo;
 
-    cout << "¡Bienvenido a la Tienda Temática!\n";
+    cout << "¡Bienvenido a la Tienda!\n";
     cout << "Por favor, ingrese sus datos para crear una cuenta corriente.\n";
     cout << "Nombre: ";
     getline(cin, nombre);
     cout << "Apellidos: ";
     getline(cin, apellidos);
-    cout << "Dirección: ";
+    cout << "Direccion: ";
     getline(cin, direccion);
-    cout << "Teléfono: ";
+    cout << "Telefono: ";
     getline(cin, telefono);
-    cout << "Número de identificación: ";
+    cout << "Numero de identificacion: ";
     getline(cin, numeroIdentificacion);
     cout << "Clave (ingrese 12345 si no tiene una clave): ";
     getline(cin, clave);
